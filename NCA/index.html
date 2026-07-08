@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neural Cellular Automata Visualizer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/index.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>Neural Cellular Automata <span>Step-by-Step Inspector</span></h1>
+    </header>
+    <div class="layout">
+      <main class="grid-section">
+        <div class="controls" id="controls">
+          <!-- Controls will be injected here -->
+        </div>
+        <div class="canvas-container">
+          <canvas id="nca-canvas"></canvas>
+        </div>
+      </main>
+      <aside class="inspector-section" id="inspector">
+        <!-- Inspector will be injected here -->
+        <div class="inspector-placeholder">
+          Select a cell in the grid to inspect its step-by-step logic.
+        </div>
+      </aside>
+    </div>
+  </div>
+  <script type="module" src="./src/app.js"></script>
+</body>
+</html>
